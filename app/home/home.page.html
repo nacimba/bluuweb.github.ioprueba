@@ -1,0 +1,175 @@
+<ion-header class="ion-no-border">
+	<ion-toolbar>
+		<ion-buttons slot="start">
+			<ion-button>
+				<ion-icon name="apps"></ion-icon>
+			</ion-button>
+		</ion-buttons>
+
+		<ion-buttons slot="end">
+			<ion-button class="bordered" fill="solid" color="light">
+				<ion-icon color="custom" name="notifications"></ion-icon>
+			</ion-button>
+		</ion-buttons>
+	</ion-toolbar>
+
+
+  <ion-item lines="none">
+
+		<ion-avatar slot="start">
+			<img src="./assets/open.jpg">
+    </ion-avatar>
+			<ion-label>
+				<p>Lo controlas "TU"</p>
+				<h3>EMPRESA JHALPAKA</h3>
+			</ion-label>
+
+	</ion-item>
+
+
+
+</ion-header>
+
+<ion-content>
+
+  <div class="slides ion-margin-bottom">
+
+    <ion-slides >
+      <ion-slide>
+        <ion-card>
+          <ion-card-header>
+            <div class="main">
+              <img src="./assets/open.jpg">
+            </div>
+            <img class="files" src="./assets/open.jpg">
+            
+            <div class="mi-boton1">
+            <ion-button  color="primary"  (click)="navigateToRegistro()" style="width:300px;">Añadir</ion-button>
+          
+        </div>
+          </ion-card-header>
+          <ion-card-content class="ion-text-left">
+            <ion-card-title class="ion-margin-bottom">Productos</ion-card-title>
+            <ion-card-subtitle class="ion-text-right">1-10 Productos</ion-card-subtitle>
+            <ion-progress-bar value="0.0" color="custom"></ion-progress-bar>
+          </ion-card-content>
+        </ion-card>
+      </ion-slide>
+
+      <ion-slide>
+        <ion-card>
+          <ion-card-header>
+            <div class="main">
+              <img src="./assets/venta.jpg">
+            </div>
+            <img class="files"  src="./assets/venta.jpg">
+            
+          </ion-card-header>
+          <div class="container-fluid size" style="padding-top: 20px;">
+            <div class="mi-boton2">
+            <ion-button  color="primary"  (click)="navigateToVenta()" style="width:100px;">Vender</ion-button>
+          </div>
+          </div>
+          <ion-card-content class="ion-text-left">
+            <ion-card-title class="ion-margin-bottom">Productos vendidos</ion-card-title>
+            <ion-card-subtitle class="ion-text-right">10/50 Pro</ion-card-subtitle>
+            <ion-progress-bar value="0.4" color="warning"></ion-progress-bar>
+          </ion-card-content>
+        </ion-card>
+      </ion-slide>
+
+    </ion-slides>
+
+  </div>
+
+  <div class="container">
+
+    <h2>Imprimir etiquetas</h2>
+
+    <ion-item lines="none">
+      <ion-grid>
+        <ion-row class="ion-align-items-center">
+          <ion-col size="3">
+            <ion-button color="light" fill="clear">
+              <ion-icon slot="icon-only" name="document"></ion-icon>
+            </ion-button>
+          </ion-col>
+          <ion-col size="7">
+            <ion-label>
+							<h4>codigos.PDF</h4>
+							<h6>tu carpeta/Docus</h6>
+						</ion-label>
+          </ion-col>
+          <ion-col size="2">
+            <ion-button color="light" fill="clear">
+              <ion-icon slot="icon-only" name="ellipsis-vertical"></ion-icon>
+            </ion-button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-item>
+
+        <ion-item lines="none">
+      <ion-grid>
+        <ion-row class="ion-align-items-center">
+          <ion-col size="3">
+            <ion-button color="light" fill="clear">
+              <ion-icon slot="icon-only" name="film"></ion-icon>
+            </ion-button>
+          </ion-col>
+          <ion-col size="7">
+            <ion-label>
+							<h4>Proyectos</h4>
+							<h6>ruta de tu ordena/proyectos</h6>
+						</ion-label>
+          </ion-col>
+          <ion-col size="2">
+            <ion-button color="light" fill="clear">
+              <ion-icon slot="icon-only" name="ellipsis-vertical"></ion-icon>
+            </ion-button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-item>
+
+  </div>
+  
+</ion-content>
+
+
+<!-- 
+
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      <DIV ALIGN=center>Lo controlas "tu"</DIV>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Mi tiendita inteligente</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <DIV ALIGN=center>Autogestión de tu tienda, "hazlo a tu manera"</DIV>
+
+  <ion-content>
+
+  
+    <ion-button class="mi-boton1" color="primary" expand="full" (click)="navigateToRegistro()">Registra tu producto</ion-button>
+   
+  <ion-button class="mi-boton2" color="primary" expand="full" (click)="navigateToVenta()">Vende tu producto</ion-button>
+
+
+  <ion-button class="mi-boton3" color="primary" expand="full" (click)="navigateToConsulta()">Consulta tu producto</ion-button>
+
+
+  <ion-button class="mi-boton4" color="primary" expand="full" (click)="navigateToRegistroqr()">Mira QR de producto </ion-button>
+
+ 
+</ion-content>
+-->
+
